@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% set navType = 'default' %}
+
+{% block body %}
+
+
+
+
+<div style="background-color: #383838" class="example-wrapper">
+
+    <h1 style="text-align: center; color: white; padding-top: 8%">Contact</h1>
+    <div class="form-group">
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+      <button style="float: left; margin-right: 10px;" class="btn btn-success">{{ button_label|default('Verzend') }}</button>
+    {{ form_end(form) }}
+    </div>
+</div>
+{% endblock %}
